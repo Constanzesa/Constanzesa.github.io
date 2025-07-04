@@ -1,0 +1,11 @@
+/* --- custom.css: styles that come *after* minima's --- */
+body {
+  font-family: "Inter", sans-serif;
+}
+h1, h2, h3 {
+  color: #004d99;            /* deep MIT-ish blue */
+}
+a:hover {
+  text-decoration: underline;
+}
+
