@@ -4,7 +4,7 @@ url: "https://constanzesa.github.io"
 
 theme: minima
 minima:
-  skin: dark          # pure dark variant built into the theme
+  skin: dark        # built-in dark palette
 
 plugins:
-  - jekyll-feed       # GitHub Pages white-lists this plugin
+  - jekyll-feed
