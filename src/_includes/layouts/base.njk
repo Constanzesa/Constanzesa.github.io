@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{ title or "ME Blog" }}</title>
+  <title>{{ title or site.title }}</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title"><a href="/">{{ title or "ME Blog" }}</a></h1>
+  <h1 class="site-title"><a href="/">{{ title or site.title }}</a></h1>
     </div>
   </header>
 
@@ -18,7 +18,7 @@
   </main>
 
   <footer class="site-footer container">
-    <p>© {{ "now" | date("YYYY") }} ME</p>
+    <p>© {{ "now" | date("YYYY") }} {{ site.author }}</p>
   </footer>
 </body>
 </html>
