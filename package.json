@@ -1,0 +1,14 @@
+{
+  "name": "me-blog",
+  "version": "0.1.0",
+  "description": "Personal blog site built with Eleventy",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve",
+    "clean": "rm -rf docs",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.2"
+  }
+}
