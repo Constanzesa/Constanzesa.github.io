@@ -17,13 +17,8 @@
     </div>
   </header>
 
-  <main class="container content-layout">
-    <div class="main-column">
-      {{ content | safe }}
-    </div>
-    <div class="side-column">
-      {% include "sidebar.njk" %}
-    </div>
+  <main class="container content">
+    {{ content | safe }}
   </main>
 
   <footer class="site-footer container">
