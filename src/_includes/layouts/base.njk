@@ -9,7 +9,11 @@
 <body>
   <header class="site-header">
     <div class="container">
-  <h1 class="site-title"><a href="/">{{ title or site.title }}</a></h1>
+      <h1 class="site-title"><a href="/">{{ title or site.title }}</a></h1>
+      <nav class="site-nav">
+        {% if site.social.github %}<a href="{{ site.social.github }}">GitHub</a>{% endif %}
+        {% if site.social.twitter %} | <a href="{{ site.social.twitter }}">Twitter</a>{% endif %}
+      </nav>
     </div>
   </header>
 

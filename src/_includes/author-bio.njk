@@ -1,0 +1,8 @@
+<div class="author-bio">
+  <h4>About {{ site.author }}</h4>
+  <p>{{ site.bio }}</p>
+  <p class="social">
+    {% if site.social.github %}<a href="{{ site.social.github }}">GitHub</a>{% endif %}
+    {% if site.social.twitter %} | <a href="{{ site.social.twitter }}">Twitter</a>{% endif %}
+  </p>
+</div>

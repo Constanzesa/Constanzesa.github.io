@@ -1,5 +1,10 @@
 {
   "title": "Constanze Albrecht",
   "description": "Notes and essays on machine learning, software engineering, and AI research.",
-  "author": "Constanze Albrecht"
+  "author": "Constanze Albrecht",
+  "social": {
+    "github": "https://github.com/Constanzesa",
+    "twitter": "https://twitter.com/Constanzesa"
+  },
+  "bio": "I write about ML, software engineering and applied AI."
 }

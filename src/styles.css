@@ -8,9 +8,12 @@ body{font-family: Georgia, 'Times New Roman', serif; color:var(--text); margin:0
 .container{max-width:var(--max-width); margin:0 auto; padding:1rem;}
 .site-header{background:white; border-bottom:1px solid #eee;}
 .site-title{font-weight:700; margin:0; font-size:1.6rem}
+a.site-nav{float:right}
+.site-nav a{color:var(--accent); margin-left:0.5rem}
 a{color:var(--accent); text-decoration:none}
 a:hover{text-decoration:underline}
 .content h2{margin-top:0}
+.author-bio{background:#fafafa; border-left:4px solid #eee; padding:0.75rem; margin:0.75rem 0}
 .posts{list-style:none; padding:0}
 .posts li{padding:0.75rem 0; border-bottom:1px solid #f0f0f0}
 .post-meta{color:#666; font-size:0.9rem}

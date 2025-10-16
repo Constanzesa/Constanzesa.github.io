@@ -1,5 +1,5 @@
 <article class="post">
   <h1>{{ title }}</h1>
-  <p class="post-meta">{{ date | date("yyyy-MM-dd") }}</p>
+  <p class="post-meta">{{ date | date("yyyy-MM-dd") }} — by {{ site.author }}</p>
   {{ content | safe }}
 </article>
