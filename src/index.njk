@@ -3,18 +3,23 @@ layout: layouts/base.njk
 title: ME - Home
 ---
 
-<h2>{{ site.title }}</h2>
-<p class="site-description">{{ site.description }}</p>
+<header class="home-header">
+  <h2>{{ site.title }}</h2>
+  <p class="site-description">{{ site.description }}</p>
+</header>
 
-<h3>Posts</h3>
-<ul class="posts">
-{% for post in collections.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
-    <span class="post-date">{{ post.date | date("yyyy-MM-dd") }}</span>
-    {% if post.data.description %}
-      <p class="post-description">{{ post.data.description }}</p>
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
+<section class="posts-list">
+  <ul class="posts">
+  {% for post in collections.posts %}
+    <li>
+      <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
+      <div class="post-meta-row">
+        <span class="post-date">{{ post.date | date("yyyy-MM-dd") }}</span>
+        {% if post.data.description %}
+          <span class="post-desc">{{ post.data.description }}</span>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

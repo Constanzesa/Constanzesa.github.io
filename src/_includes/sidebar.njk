@@ -1,0 +1,23 @@
+<aside class="sidebar">
+  <section class="bio">
+    <h3>{{ site.author }}</h3>
+    <p>{{ site.bio }}</p>
+  </section>
+
+  <section class="recent-posts">
+    <h4>Recent posts</h4>
+    <ul>
+      {% for post in collections.posts | slice(0,6) %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="social-links">
+    <h4>Find me</h4>
+    <p>
+      {% if site.social.github %}<a href="{{ site.social.github }}">GitHub</a>{% endif %}
+      {% if site.social.twitter %} | <a href="{{ site.social.twitter }}">Twitter</a>{% endif %}
+    </p>
+  </section>
+</aside>
