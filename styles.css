@@ -10,10 +10,7 @@ body{font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; color:var
 .site-title{font-weight:700; margin:0; font-size:1.4rem}
 .site-nav{float:right}
 .site-nav a{color:var(--accent); margin-left:0.5rem}
-.content-layout{display:grid; grid-template-columns: 1fr 300px; gap:2rem; align-items:start}
-.main-column{min-width:0}
-.side-column{min-width:0}
-.sidebar{background:transparent}
+.content{max-width:900px; margin:0 auto}
 .bio h3{margin:0 0 0.5rem 0}
 .author-bio, .bio{font-size:0.95rem}
 .posts{list-style:none; padding:0; margin:0}
@@ -25,6 +22,5 @@ body{font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; color:var
 .post-meta{color:#777; font-size:0.9rem}
 .post-body{margin-top:1rem}
 @media (max-width:900px){
-  .content-layout{grid-template-columns: 1fr;}
   .site-nav{float:none; margin-top:0.5rem}
 }
