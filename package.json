@@ -8,7 +8,5 @@
     "clean": "rm -rf docs",
     "start": "npm run dev"
   },
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.2"
-  }
+  "devDependencies": {}
 }
